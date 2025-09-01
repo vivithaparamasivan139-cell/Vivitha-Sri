@@ -1,15 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Volunteer & Social Services</title>
+    <!DOCTYPE html>
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Volunteer & Social Services</title>  
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * {  
+            margin: 0;  
+            padding: 0;  
+            box-sizing: border-box;  
+        }  
 
         body {
             font-family: Arial, sans-serif;
@@ -83,60 +84,62 @@
             color: #777;
         }
     </style>
-</head>
-<body>
-    <header>
-        <h1>Volunteer & Social Services</h1>
-        <p>Helping communities, one step at a time.</p>
-    </header>
+</head>  
 
-    <section class="services">
-        <h2>Our Initiatives</h2>
-        <ul>
-            <li>🌱 Community Cleanups</li>
-            <li>📚 Free Tutoring for Children</li>
-            <li>🥫 Food Drives</li>
-            <li>🏡 Shelter Support</li>
-            <li>💉 Health Awareness Camps</li>
-        </ul>
-    </section>
+<body>  
+    <header>  
+        <h1>Volunteer & Social Services</h1>  
+        <p>Helping communities, one step at a time.</p>  
+    </header>  
 
-    <section class="volunteer-form">
-        <h2>Become a Volunteer</h2>
-        <form id="volunteerForm">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Why do you want to volunteer?" required></textarea>
-            <button type="submit">Sign Up</button>
-        </form>
-        <p id="formMessage"></p>
-    </section>
+    <section class="services">  
+        <h2>Our Initiatives</h2>  
+        <ul>  
+            <li>🌱 Community Cleanups</li>  
+            <li>📚 Free Tutoring for Children</li>  
+            <li>🥫 Food Drives</li>  
+            <li>🏡 Shelter Support</li>  
+            <li>💉 Health Awareness Camps</li>  
+        </ul>  
+    </section>  
 
-    <footer>
-        <p>© 2025 Volunteer & Social Services. All rights reserved.</p>
-    </footer>
+    <section class="volunteer-form">  
+        <h2>Become a Volunteer</h2>  
+        <form id="volunteerForm">  
+            <input type="text" id="name" placeholder="Your Name" required>  
+            <input type="email" id="email" placeholder="Your Email" required>  
+            <textarea id="message" placeholder="Why do you want to volunteer?" required></textarea>  
+            <button type="submit">Sign Up</button>  
+        </form>  
+        <p id="formMessage"></p>  
+    </section>  
+
+    <footer>  
+        <p>© 2025 Volunteer & Social Services. All rights reserved.</p>  
+    </footer>  
 
     <script>
         document.getElementById("volunteerForm").addEventListener("submit", function(e) {
             e.preventDefault();
 
-            // Get form values
-            const name = document.getElementById("name").value.trim();
-            const email = document.getElementById("email").value.trim();
-            const message = document.getElementById("message").value.trim();
+            // Get form values  
+            const name = document.getElementById("name").value.trim();  
+            const email = document.getElementById("email").value.trim();  
+            const message = document.getElementById("message").value.trim();  
 
-            // Simple validation
-            if (!name || !email || !message) {
-                alert("Please fill out all fields.");
-                return;
-            }
+            // Simple validation  
+            if (!name || !email || !message) {  
+                alert("Please fill out all fields.");  
+                return;  
+            }  
 
-            // Display confirmation message
-            document.getElementById("formMessage").textContent = `Thank you, ${name}, for signing up to volunteer! We'll contact you at ${email}.`;
+            // Display confirmation message  
+            document.getElementById("formMessage").textContent = 
+                `Thank you, ${name}, for signing up to volunteer! We'll contact you at ${email}.`;  
 
-            // Clear form
+            // Clear form  
             document.getElementById("volunteerForm").reset();
         });
     </script>
-</body>
+</body>  
 </html>
